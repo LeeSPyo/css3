@@ -3,32 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test2.html</title>
+    <title>test3.html</title>
     <style>
         /*
             - 여러개의 선택자 구분(동등한레벨) : ,
                 아이디, 태그1, 태그2, 클래스명
-            - 자식 선택자 : >
-                아이디(클래스/태그) > ol > li > ul > li
-            - 자손 선택자 : 공백
-                아이디(클래스/태그) > ul  li
         */
 
-        #content > ol > li > ul > li {
-            background-color: indianred;
-            color: white;
-        }
-        
-        ul li {
+        ul, ol {
             background-color: yellowgreen;
             color: blue;
         }
-        
-        /* #content > ol > li { */
-        ol > li {
-            background-color: royalblue;
-            color: brown;
-        }
+
+        .fruit {color: red}
+        #banana {background-color: yellow;}
     </style>
 </head>
 <body>
@@ -39,10 +27,10 @@
             <li>과자</li>
             <li>
                 과일
-                <ul>
+                <ul class="fruit">
                     <li>사과</li>
                     <li>배</li>
-                    <li>바나나</li>
+                    <li id="banana">바나나</li>
                 </ul>
             </li>
             <li>찐빵</li>
@@ -56,7 +44,7 @@
         <li>과자</li>
         <li>
             과일
-            <ol>
+            <ol class="fruit">
                 <li>사과</li>
                 <li>배</li>
                 <li>바나나</li>
@@ -72,7 +60,7 @@
         <li>과자</li>
         <li>
             과일
-            <ul>
+            <ul class="fruit">
                 <li>사과</li>
                 <li>배</li>
                 <li>바나나</li>
