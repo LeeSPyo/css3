@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test7.html</title>
+  <style>
+    #layer1 {
+      width: 300px;
+      height: 300px;
+      background-color: skyblue;
+      border: 1px solid gray;
+      padding: 50px;
+      position: absolute;
+      z-index: 0;
+    }
+    #static {
+      position: static;
+      /* left: 100px;   있는 그대로이다. 있으나 마나    */
+      color: blue;
+    }
+    #absolute {
+      position: absolute;
+      left: 200px;
+      top: 100px;
+      color: red;
+    }
+    #fixed {
+      position: fixed;
+      left: 200px;
+      top: 100px;
+      color: green;
+    }
+    #relative {
+      position: relative;
+      left: 200px;
+      top: 100px;
+      color: yellow;
+    }
+    #layer2 {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 300px;
+      top: 150px;
+      background-color: rosybrown;
+      z-index: 99;
+    }
+    #layer3 {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 150px;
+      top: 100px;
+      background-color: darkolivegreen;
+      z-index: 3;
+    }
+    #layer4 {
+      width: 150px;
+      height: 50px;
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+      background-color: yellowgreen;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <h2><a name="top">포지션 연습</a></h2>
+  <ol>
+    <li>Static position(기본)</li>
+    <li>Absolute position(절대지정-작업그룹기준)</li>
+    <li>Fixed position(절대지정-윈도우기준)</li>
+    <li>Relative position(상대지정)</li>
+  </ol>
+  <hr/>
+  <div id="layer1">
+    <div id="static">이곳은 Static 영역입니다.</div>
+    <div id="absolute">이곳은 Absolute 영역입니다.</div>
+    <div id="fixed">이곳은 Fixed 영역입니다.</div>
+    <div id="relative">이곳은 Relative 영역입니다.</div>
+  </div>
+  <div id="layer2">이곳은 레이어 2</div>
+  <div id="layer3">이곳은 레이어 3</div>
+  <div id="layer4"><a href="#top">.Top.</a></div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+  <div>안녕하세요</div>
+</body>
+</html>
